@@ -1,0 +1,19 @@
+.
+├── conf.d/
+├── fastcgi_params
+├── koi-utf
+├── koi-win
+├── mime.types
+├── naxsi_core.rules
+├── naxsi.rules
+├── nginx.conf
+├── proxy_params
+├── scgi_params
+├── sites-available/
+│   └── default
+├── sites-enabled/
+│   └── default -> /etc/nginx/sites-available/default
+├── uwsgi_params
+└── win-utf
+
+3 directories, 14 files

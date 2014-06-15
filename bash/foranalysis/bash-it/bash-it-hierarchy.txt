@@ -1,0 +1,141 @@
+.
+├── aliases
+│   ├── available
+│   │   ├── bundler.aliases.bash
+│   │   ├── emacs.aliases.bash
+│   │   ├── general.aliases.bash
+│   │   ├── git.aliases.bash
+│   │   ├── heroku.aliases.bash
+│   │   ├── hg.aliases.bash
+│   │   ├── homebrew.aliases.bash
+│   │   ├── jitsu.aliases.bash
+│   │   ├── maven.aliases.bash
+│   │   ├── osx.aliases.bash
+│   │   ├── rails.aliases.bash
+│   │   ├── textmate.aliases.bash
+│   │   ├── todo.txt-cli.aliases.bash
+│   │   └── vim.aliases.bash
+│   └── enabled
+│       └── bundler.aliases.bash -> /root/.bash_it/aliases/available/bundler.aliases.bash
+├── bash_it.sh
+├── completion
+│   └── available
+│       ├── bash-it.completion.bash
+│       ├── brew.completion.bash
+│       ├── defaults.completion.bash
+│       ├── django.completion.bash
+│       ├── fabric-completion.bash
+│       ├── gem.completion.bash
+│       ├── git.completion.bash
+│       ├── git_flow.completion.bash
+│       ├── maven.completion.bash
+│       ├── pip.completion.bash
+│       ├── rake.completion.bash
+│       ├── ssh.completion.bash
+│       ├── tmux.completion.bash
+│       └── todo.completion.bash
+├── custom
+│   └── example.bash
+├── install.sh
+├── install.sh~
+├── lib
+│   ├── appearance.bash
+│   ├── composure.sh
+│   ├── helpers.bash
+│   ├── history.bash
+│   └── preexec.bash
+├── plugins
+│   └── available
+│       ├── base.plugin.bash
+│       ├── battery.plugin.bash
+│       ├── browser.plugin.bash
+│       ├── dirs.plugin.bash
+│       ├── extract.plugin.bash
+│       ├── fasd.plugin.bash
+│       ├── git.plugin.bash
+│       ├── hg.plugin.bash
+│       ├── java.plugin.bash
+│       ├── javascript.plugin.bash
+│       ├── jekyll.plugin.bash
+│       ├── latex.plugin.bash
+│       ├── nginx.plugin.bash
+│       ├── node.plugin.bash
+│       ├── nvm.plugin.bash
+│       ├── osx.plugin.bash
+│       ├── python.plugin.bash
+│       ├── rbenv.plugin.bash
+│       ├── ruby.plugin.bash
+│       ├── rvm.plugin.bash
+│       ├── ssh.plugin.bash
+│       ├── subversion.plugin.bash
+│       ├── tmuxinator.plugin.bash
+│       ├── tmux.plugin.bash
+│       ├── todo
+│       │   ├── todo.cfg
+│       │   ├── todo_completion
+│       │   └── todo.sh
+│       ├── todo.plugin.bash
+│       ├── vagrant.plugin.bash
+│       ├── virtualenv.plugin.bash
+│       ├── _xterm.plugin.bash
+│       ├── z_autoenv.plugin.bash
+│       └── z.plugin.bash
+├── README.md
+├── template
+│   ├── bash_profile.template.bash
+│   └── jekyllconfig.template.bash
+└── themes
+    ├── base.theme.bash
+    ├── bobby
+    │   └── bobby.theme.bash
+    ├── candy
+    │   └── candy.theme.bash
+    ├── clean
+    │   └── clean.theme.bash
+    ├── colors.theme.bash
+    ├── demula
+    │   └── demula.theme.bash
+    ├── dos
+    │   └── dos.theme.bash
+    ├── doubletime
+    │   └── doubletime.theme.bash
+    ├── doubletime_multiline
+    │   └── doubletime_multiline.theme.bash
+    ├── doubletime_multiline_pyonly
+    │   └── doubletime_multiline_pyonly.theme.bash
+    ├── envy
+    │   └── envy.theme.bash
+    ├── hawaii50
+    │   └── hawaii50.theme.bash
+    ├── mbriggs
+    │   └── mbriggs.theme.bash
+    ├── minimal
+    │   └── minimal.theme.bash
+    ├── modern
+    │   └── modern.theme.bash
+    ├── modern-t
+    │   └── modern-t.theme.bash
+    ├── n0qorg
+    │   └── n0qorg.theme.bash
+    ├── pete
+    │   └── pete.theme.bash
+    ├── rainbowbrite
+    │   └── rainbowbrite.theme.bash
+    ├── rjorgenson
+    │   └── rjorgenson.theme.bash
+    ├── simple
+    │   └── simple.theme.bash
+    ├── sirup
+    │   └── sirup.theme.bash
+    ├── standard
+    │   └── standard.theme.bash
+    ├── tonka
+    │   └── tonka.theme.bash
+    ├── tylenol
+    │   └── tylenol.theme.bash
+    ├── zitron
+    │   └── zitron.theme.bash
+    └── zork
+        └── zork.theme.bash
+
+37 directories, 101 files
