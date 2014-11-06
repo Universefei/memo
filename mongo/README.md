@@ -16,21 +16,21 @@ MongoDB
 Server operations
 -----------------
 
-### 1.开启服务器：
+#### 1.开启服务器：
 
  CML：`mongod [--dbpath dbfilepaht]`
 
  CML: `mongod --repair`(以修复模式启动)
  
-### 2.关闭数据库
+#### 2.关闭数据库
 
  mongo(JS)中：`db.shutdownServer()`
 
-### 3.开启数据库交互终端:
+#### 3.开启数据库交互终端:
 
  CML:`mongo`
  
-### 4. 连接数据库
+#### 4. 连接数据库
 
  **格式**：在mongo(JS)代码中下：
  `mongodb://username:password@hostname/dbname`
@@ -41,7 +41,7 @@ Server operations
  
  `mongodb://fred:foobar@localhost/zoul`
 
-### 5. 获取服务器元数据
+#### 5. 获取服务器元数据
 
  `db.version()`（查看版本）
  
@@ -53,13 +53,13 @@ Server operations
 User and Permission
 -------------------
 
-### 1. 添加用户
+#### 1. 添加用户
  `db.addUser("zoul", "jjfjj", true)`(用户名，密码，是否只读)
  
-### 2. 删除用户
+#### 2. 删除用户
  `db.removeUser("zoul")`
 
-### 3. 查看当前DB的用户
+#### 3. 查看当前DB的用户
  `show users;`
  
 
@@ -75,7 +75,7 @@ DB and Collections
 
 `use dbname`
 
-### 1. 创建Database
+#### 1. 创建Database
 
 `use newdbname`
 
@@ -84,15 +84,15 @@ DB and Collections
 一气呵成，如果只执行`use newdbname`不会创建，因为为空。
 第二条命令创建了一个collection叫`student`，并且在其中插入了一个document。
 
-### 2. 查看某DB的统计信息
+#### 2. 查看某DB的统计信息
 
 `db.stats()`
 
-### 3. 查看指定DB包含的Collection列表
+#### 3. 查看指定DB包含的Collection列表
 
 `db.getCollectionNames()`
 
-### 4. 创建Collection
+#### 4. 创建Collection
 
 `db.newCollectionname.insert({"name":"feilunzhou"})`
 
@@ -100,17 +100,17 @@ DB and Collections
 
 `db.createCollection(name, {size:..., capped:..., max:,,,})`
 
-### 统计Collection中的Document数
+#### 统计Collection中的Document数
 
 `db.collName.count()`
 
-### 查看Collection的内存使用情况
+#### 查看Collection的内存使用情况
 
 `db.collName.storageSize()`（可用空间）
 
 `db.collName.totalSize()`(分配的所有存储空间，包含索引)
 
-### 删除DB
+#### 删除DB
 
 `db.dropDatabase()`
 
@@ -119,18 +119,18 @@ DB and Collections
 索引操作
 --------
 
-### 创建索引
+#### 创建索引
 `db.collName.ensureIndex({'field1':1, 'field2':-1})`
 
-### 查看索引
+#### 查看索引
 `db.collName.getIndexes()`
 
-### 删除索引
+#### 删除索引
 `db.collName.dropIndex(indexName)`	
 
 `db.collName.dropIndexes()`(删除本Collection上的所有索引)
 
-### 重建索引
+#### 重建索引
 `db.collName.reIndex()`
 
 
@@ -138,7 +138,7 @@ DB and Collections
 DML and DQL
 -----------
 
-### 插入document（增）
+#### 插入document（增）
 `db.collName.save({"name":"feilunzhou","age":"25"})`
 
 或者
@@ -146,13 +146,13 @@ DML and DQL
 `db.collName.insert({dict})`
 
 
-### 删除document（删）
+#### 删除document（删）
 `db.collName.remove({"name":"feilunzhou"})`(其中的字典指定删除的查询)
 
 
-### 修改document (改)
+#### 修改document (改)
 
-### 查询document (查)
+#### 查询document (查)
 
 `db.collName.find({"age":"25"})`(字典指定查询条件)
 
