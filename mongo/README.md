@@ -1,7 +1,7 @@
 MongoDB
 =======
 
-** MongoDB VS. SQL **
+**MongoDB VS. SQL**
 
 * Database: Database
 * Table :Collection
@@ -13,12 +13,13 @@ MongoDB
 * index : index
 
 
-## Server operations
-------------------
+Server operations
+-----------------
 
 ### 1.开启服务器：
 
  CML：`mongod [--dbpath dbfilepaht]`
+
  CML: `mongod --repair`(以修复模式启动)
  
 ### 2.关闭数据库
@@ -49,8 +50,8 @@ MongoDB
  `db.serverStatus()`(查看服务器状态)
 
 
-## User and Permission
----------------------
+User and Permission
+-------------------
 
 ### 1. 添加用户
  `db.addUser("zoul", "jjfjj", true)`(用户名，密码，是否只读)
@@ -63,8 +64,8 @@ MongoDB
  
 
 
-## DB and Collections
----------------------
+DB and Collections
+------------------
 
 因为MongoDB同大多数NoSQL一样都是Schemaless(无模式)的，所以就没有那么严格的DDL。所以相关的Collection的创建和定义就比较简单.
 
@@ -75,7 +76,9 @@ MongoDB
 `use dbname`
 
 ### 1. 创建Database
+
 `use newdbname`
+
 `db.student.insert({"name":"feilunzhou")`
 
 一气呵成，如果只执行`use newdbname`不会创建，因为为空。
@@ -86,6 +89,7 @@ MongoDB
 `db.stats()`
 
 ### 3. 查看指定DB包含的Collection列表
+
 `db.getCollectionNames()`
 
 ### 4. 创建Collection
@@ -97,20 +101,23 @@ MongoDB
 `db.createCollection(name, {size:..., capped:..., max:,,,})`
 
 ### 统计Collection中的Document数
+
 `db.collName.count()`
 
 ### 查看Collection的内存使用情况
+
 `db.collName.storageSize()`（可用空间）
 
 `db.collName.totalSize()`(分配的所有存储空间，包含索引)
 
 ### 删除DB
+
 `db.dropDatabase()`
 
 
 
-## 索引操作
-----------
+索引操作
+--------
 
 ### 创建索引
 `db.collName.ensureIndex({'field1':1, 'field2':-1})`
@@ -128,8 +135,8 @@ MongoDB
 
 
 
-## DML and DQL
---------------
+DML and DQL
+-----------
 
 ### 插入document（增）
 `db.collName.save({"name":"feilunzhou","age":"25"})`
@@ -151,19 +158,22 @@ MongoDB
 
 `db.collName.find({condition dict}).count()`(查询结果的记录数)
 
-## Transaction
+Transaction
+-----------
+
+
+Administration
 --------------
 
 
-## Administration
------------------
 
+Reference
+---------
 
-
-## Reference
-------------
 [CSDN](http://blog.csdn.net/shirdrn/article/details/7105539)
+
 [Cnblog](http://www.cnblogs.com/TankMa/archive/2011/06/08/2074947.html)
+
 [W3CSchool](http://www.w3cschool.cc/mongodb/mongodb-connections.html)
 
 
